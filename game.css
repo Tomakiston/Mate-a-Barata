@@ -1,0 +1,91 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+#gameArea {
+    width: 600px;
+    height: 400px;
+    background-color: #333;
+    border: 3px solid wheat;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+#player {
+    width: 80px;
+    position: absolute;
+    bottom: 10px;
+    left: 260px;
+    transition: transform 0.1;
+}
+#enemy {
+    width: 80px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+#dialog {
+    background-color: black;
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.lifeContainer {
+    width: 250px;
+    height: 20px;
+    background-color: gray;
+    margin: 10px auto;
+    border: 2px solid white;
+    position: relative;
+}
+.life {
+    height: 100%;
+    transition: width 0.3s, background 0.3s;
+}
+#playerLife {
+    background-color: green;
+    width: 100%;
+}
+#enemyLife {
+    background: red;
+    width: 100%;
+}
+.btn {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.damage {
+    background: red;
+    color: white;
+}
+.heal {
+    background: green;
+    color: white;
+}
+.shop {
+    background: orange;
+    color: white;
+}
+.attack {
+    background: blue;
+    color: white;
+}
+.damage:active {
+    background: darkred;
+}
+.heal:active {
+    background: darkgreen;
+}
+.shop:active {
+    background: darkorange;
+}
+.attack:active {
+    background: darkblue;
+}

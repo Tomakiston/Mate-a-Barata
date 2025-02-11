@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mate a barata</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <h2>Mate a barata</h2>
+    <div id="dialog">Use as setas pra mover o personagem</div>
+    <div id="gameArea">
+        <img src="sbp.png" id="player" alt="Jogador">
+        <img src="roach.png" id="enemy" alt="Inimigo">
+    </div>
+    <h3>Vida do Jogador</h3>
+    <div class="lifeContainer">
+        <div id="playerLife" class="life"></div>
+    </div>
+    <h3>Vida do Inimigo</h3>
+    <div class="lifeContainer">
+        <div id="enemyLife" class="life"></div>
+    </div>
+    <button class="btn damage" onclick="changeLife(-20)">Tomar dano</button>
+    <button class="btn heal" onclick="changeLife(+20)">Curar</button>
+    <button class="btn shop" onclick="openShop()">Loja</button>
+    <button class="btn attack" onclick="specialAttack()">Ataque Enseticida</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
